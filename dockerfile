@@ -11,6 +11,6 @@ RUN apt-get update && \
 
 RUN  mvn package && mvn install
 
-CMD ["java", "application.HelloApplication.java"]
+CMD ["java","-jar","target/nom-du-fichier.jar"]
 
 # CMD [ "java", "--module-path", "./target/", "--add-modules", "javafx.controls,javafx.fxml","./src/app/main.java" ]
