@@ -39,3 +39,5 @@ build/
 data
 .project
 target
+.idea
+.mvn
