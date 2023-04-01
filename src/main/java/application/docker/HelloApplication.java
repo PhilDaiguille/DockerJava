@@ -16,7 +16,6 @@ public class HelloApplication extends Application {
         try {
             Class.forName(Credentials.getDriverClassName());
             Connection connection = DriverManager.getConnection(Credentials.getUrl(), Credentials.getUser(), Credentials.getPassword());
-            System.out.println("un truc");
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 320, 240);
             stage.setTitle("Hello!");
